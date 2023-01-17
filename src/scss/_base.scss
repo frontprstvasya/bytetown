@@ -1,0 +1,58 @@
+body {
+    font-family: 'Manrope-Medium';
+    background-color: $white-bg;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.title {
+    font-family: 'Grafita';
+    margin-left: -4px;
+    color: $barley;
+    font-size: 54px;
+    line-height: 56px;
+    font-weight: 400;
+}
+
+.anim-columns-wrapper {
+    position: relative;
+}
+
+.anim-columns {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.column-1,
+.column-2,
+.column-3 {
+    background-color: $wild-sand;
+    width: calc(100% / 3);
+    height: 0;
+}

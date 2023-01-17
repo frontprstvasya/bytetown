@@ -1,0 +1,11 @@
+.twig {
+    position: relative;
+    &::before {
+        content: url('/src/assets/img/twig/twig.svg');
+        position: absolute;
+        left: 0;
+        @include desktop-down {
+            left: calc((100vw - 1500px) / 2);
+        }
+    }
+}

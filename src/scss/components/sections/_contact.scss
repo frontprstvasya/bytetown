@@ -1,0 +1,15 @@
+@import '../blocks/links-list';
+@import '../blocks/form';
+.contact {
+    padding: 48px 0 676px 0;
+    background-color: $wild-sand;
+    &::before {
+        top: 65px;
+    }
+    &__title {
+        margin-bottom: 52px;
+    }
+    &__links-list {
+        margin-bottom: 70px;
+    }
+}

@@ -1,0 +1,31 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    &__input {
+        font-family: 'Manrope-Regular';
+        margin-bottom: 40px;
+        border: none;
+        border-bottom: 1px solid $form-border;
+        height: 50px;
+        background-color: transparent;
+        &::placeholder {
+            color: $dark;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+    }
+    &__submit {
+        border: 1px solid $gold;
+        height: 50px;
+        color: $white;
+        background-color: $gold;
+        cursor: pointer;
+        &:hover {
+            color: $gold;
+            background-color: transparent;
+            transition: all .3s ease;
+        }
+    }
+}

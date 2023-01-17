@@ -1,0 +1,16 @@
+@import '../blocks/nav';
+@import '../blocks/logo';
+@import '../blocks/actions';
+.header {
+    padding: 21px 0;
+    background-color: $wild-sand;
+    &__container {
+        display: flex;
+    }
+    &__logo {
+        margin-right: 105px;
+    }
+    &__nav {
+        margin-right: auto;
+    }
+}

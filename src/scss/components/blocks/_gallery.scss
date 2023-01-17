@@ -1,0 +1,13 @@
+.gallery {
+    display: flex;
+    align-items: flex-end;
+    &__item {
+        margin-right: 25px;
+    }
+    &__mark {
+        font-family: 'Manrope-Regular';
+        color: $dark;
+        font-size: 20px;
+        line-height: 27.32px;
+    }
+}

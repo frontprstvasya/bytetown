@@ -1,0 +1,65 @@
+    .actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 115px;
+        & svg:hover {
+            & path,
+            & line {
+                stroke: $barley;
+                transition: all .3s ease;
+            }
+        }
+        &__search button {
+            border: none;
+            width: 20px;
+            height: 22px;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        &__cart {
+            &_count {
+                & a {
+                    position: relative;
+                    &::before {
+                        content: '1';
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        left: 7px;
+                        bottom: 5px;
+                        border-radius: 50%;
+                        width: 15px;
+                        height: 15px;
+                        color: $dark;
+                        font-size: 14px;
+                        background-color: $gold;
+                    }
+                }
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                background-color: $bone;
+                // background-image: url('/src/assets/img/actions/cart-icon.svg');
+                // background-repeat: no-repeat;
+                // background-position: center;
+                // background-size: 22px;
+                cursor: pointer;
+            }
+        }
+        &__profile a {
+            display: block;
+            width: 23px;
+            height: 22px;
+            // background-image: url('/src/assets/img/actions/profile.svg');
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // cursor: pointer;
+        }
+    }

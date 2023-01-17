@@ -1,0 +1,28 @@
+.links-list {
+    display: flex;
+    &__item {
+        margin-right: 35px;
+        & a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &_profile a {
+            background-image: url('/src/assets/img/links-list/profile.svg');
+        }
+        &_search a {
+            background-image: url('/src/assets/img/links-list/search.svg');
+        }
+        &_cart a {
+            background-image: url('/src/assets/img/links-list/cart.svg');
+        }
+        &_arrow a {
+            background-image: url('/src/assets/img/links-list/arrow.svg');
+        }
+        &_arrow-down a {
+            background-image: url('/src/assets/img/links-list/arrow-down.svg');
+        }
+    }
+}
