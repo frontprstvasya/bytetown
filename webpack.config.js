@@ -43,8 +43,8 @@ module.exports = {
         }),
         new сopy({
             patterns: [
-                { from: path.join(__dirname, 'pages'), to: path.join(__dirname, "dist/pages") },
-                { from: path.join(__dirname, 'src/assets/img'), to: path.join(__dirname, "dist/src/assets/img") }
+                { from: path.join(__dirname, 'pages'), to: path.join(__dirname, "dist") },
+                { from: path.join(__dirname, 'src/assets/img'), to: path.join(__dirname, "dist/assets/img") }
 
             ]
         })
