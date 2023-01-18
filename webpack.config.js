@@ -1,5 +1,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const сopy = require('copy-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const { mainModule } = require('process');
 
 
@@ -8,7 +10,8 @@ module.exports = {
 
     output: {
         filename: 'main.js',
-        publicPath: '/dist/'
+        publicPath: '/dist/',
+        // assetModuleFilename: 'assets/[name][ext]'
     },
     module: {
         rules: [
@@ -39,6 +42,13 @@ module.exports = {
             filename: "name.css",
             chunkFilename: "[id].css"
         }),
+        new сopy({
+            patterns: [
+                { from: path.join(__dirname, 'pages'), to: path.join(__dirname, "dist") },
+                { from: path.join(__dirname, 'src/assets/img'), to: path.join(__dirname, "dist/assets/img") }
+
+            ]
+        })
         // new HtmlWebpackPlugin(),
     ]
 
