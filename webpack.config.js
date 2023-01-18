@@ -1,8 +1,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const сopy = require('copy-webpack-plugin');
-//const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const { mainModule } = require('process');
+
 
 
 module.exports = {
@@ -49,7 +48,7 @@ module.exports = {
 
             ]
         })
-        // new HtmlWebpackPlugin(),
+
     ]
 
 };
